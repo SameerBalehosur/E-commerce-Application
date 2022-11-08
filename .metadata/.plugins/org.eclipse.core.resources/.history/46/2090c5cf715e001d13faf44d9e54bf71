@@ -1,0 +1,5 @@
+package com.testyantra.order.model;
+
+public class OrderLineItems {
+
+}

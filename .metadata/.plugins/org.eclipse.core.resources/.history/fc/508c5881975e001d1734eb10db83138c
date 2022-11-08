@@ -1,0 +1,5 @@
+package com.testyantra.inventory.service;
+
+public class InventoryService {
+
+}

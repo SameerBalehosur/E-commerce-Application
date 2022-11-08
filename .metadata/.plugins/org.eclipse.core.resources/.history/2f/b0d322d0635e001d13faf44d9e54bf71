@@ -1,0 +1,7 @@
+package com.testyantra.product.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductService extends JpaRepository<T, ID> {
+
+}

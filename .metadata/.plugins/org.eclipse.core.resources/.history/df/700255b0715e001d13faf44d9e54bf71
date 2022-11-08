@@ -1,0 +1,23 @@
+package com.testyantra.order.service;
+
+import java.util.UUID;
+
+import org.springframework.stereotype.Service;
+
+import com.testyantra.order.model.Order;
+import com.testyantra.order.repository.OrderRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class OrderService {
+	private final OrderRepository orderRepository;
+
+	public void placeOrder(Order order) {
+		Order order2=new Order();
+		order.setOrderNumber(UUID.randomUUID().toString());
+		orderRepository.
+		
+	}
+}

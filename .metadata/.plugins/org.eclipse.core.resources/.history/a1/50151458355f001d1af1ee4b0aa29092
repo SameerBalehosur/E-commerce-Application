@@ -1,0 +1,17 @@
+server:
+  port: 4141
+  
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+      - id: EMPLOYEE
+        uri: lb://EMPLOYEE
+        predicates:
+        - Path=/emp/**
+      - id: DEPARTMENT 
+        uri: lb://DEPARTMENT
+        predicates:
+        - Path=/dept/**

@@ -1,0 +1,5 @@
+package com.testyantra.order.dto;
+
+public class OrderRequest {
+
+}

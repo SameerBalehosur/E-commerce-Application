@@ -1,0 +1,21 @@
+package com.testyantra.inventory.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.testyantra.inventory.dto.InventoryResponse;
+import com.testyantra.inventory.repository.InventoryRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class InventoryService {
+	private final InventoryRepository inventoryRepository;
+	
+public List<InventoryResponse> isInStock() {
+	return null;
+	
+}
+}

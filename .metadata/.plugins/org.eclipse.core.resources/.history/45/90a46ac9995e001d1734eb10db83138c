@@ -1,0 +1,26 @@
+package com.testyantra.inventory.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
+import com.testyantra.inventory.dto.InventoryResponse;
+import com.testyantra.inventory.repository.InventoryRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class InventoryService {
+	private final InventoryRepository inventoryRepository;
+
+	public List<InventoryResponse> isInStock(List<String> skuCode) {
+		List<InventoryResponse> collect = inventoryRepository
+				.findBySkuCodeIn(skuCode).stream().map(inventory -> InventoryResponse.builder()
+						.skuCode(inventory.getSkuCode()).isInStock(inventory.getQuantity() > 0).build())
+				.collect(Collectors.toList());
+		return collect;
+
+	}
+}

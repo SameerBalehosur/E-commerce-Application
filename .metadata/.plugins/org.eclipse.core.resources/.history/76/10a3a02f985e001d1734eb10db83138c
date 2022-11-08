@@ -1,0 +1,19 @@
+package com.testyantra.inventory.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequestMapping("/api/inventory")
+@RequiredArgsConstructor
+public class InventoryController {
+	
+	public boolean inStockCheck(List<String> skuCode) {
+		
+		return false;
+		
+	}
+
+}

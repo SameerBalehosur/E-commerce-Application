@@ -1,0 +1,5 @@
+package com.testyantra.inventory.dto;
+
+public class InventoryResponse {
+
+}

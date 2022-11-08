@@ -1,0 +1,8 @@
+package com.testyantra.product.dto;
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ProductRequest {
+
+}

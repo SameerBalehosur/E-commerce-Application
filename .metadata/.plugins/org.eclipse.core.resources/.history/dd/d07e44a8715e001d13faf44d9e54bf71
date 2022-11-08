@@ -1,0 +1,17 @@
+package com.testyantra.order.service;
+
+import org.springframework.stereotype.Service;
+
+import com.testyantra.order.repository.OrderRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class OrderService {
+	private final OrderRepository orderRepository;
+
+	public void placeOrder() {
+		
+	}
+}
